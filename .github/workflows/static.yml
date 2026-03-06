@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Убрали строку cache: 'npm', чтобы не было ошибки
 
       - name: Install dependencies
         run: npm install
